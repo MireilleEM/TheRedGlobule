@@ -248,11 +248,6 @@ ul{
         background-repeat: no-repeat;
         background-size: contain;
         height: 100vh;
-        display: flex;
-        /*justify-content:left ; par défaut c'est left */
-        align-items: center;
-        /*flex-direction:row;met les éléments côte à côte de base,quels qu'ils soient*/
-        flex-direction:center;
     }
     h1{
         font-size:30px;
@@ -269,6 +264,9 @@ ul{
     .accent{
         font-size: 16px;
         text-shadow:0 0 2px black;
+    }
+    .cartes{
+        grid-template-columns:1fr;
     }
     #bienvenue{
         padding: 8px;
