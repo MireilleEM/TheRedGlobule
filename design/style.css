@@ -243,6 +243,17 @@ ul{
     .conteneur{
         width:100%; 
      }
+    #bienvenue{
+        background-image: url("../images/eye-g656204f17_1920.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100vh;
+        display: flex;
+        /*justify-content:left ; par défaut c'est left */
+        align-items: center;
+        /*flex-direction:row;met les éléments côte à côte de base,quels qu'ils soient*/
+        flex-direction:center;
+    }
     h1{
         font-size:30px;
         margin: 8px 0 8px;
