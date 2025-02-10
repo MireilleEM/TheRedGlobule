@@ -240,16 +240,21 @@ ul{
 }
 /* mobiles 480 */
 @media all and (max-width:540px){
-    .conteneur{
-        width:100%; 
-     }
     #bienvenue{
         background-image: url("../images/oeilMobile.png");
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
+        display: flex;
+        /*justify-content:left ; par défaut c'est left */
+        align-items: center;
+        /*flex-direction:row;met les éléments côte à côte de base,quels qu'ils soient*/
+        flex-direction:center;
         padding: 8px;
     }
+    .conteneur{
+        width:100%; 
+     }
     h1{
         font-size:30px;
         margin: 8px 0 8px;
@@ -265,9 +270,6 @@ ul{
     .accent{
         font-size: 16px;
         text-shadow:0 0 2px black;
-    }
-    .cartes{
-        grid-template-columns:1fr;
     }
     #dessin1{
         grid-row: auto;
