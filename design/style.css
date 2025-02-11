@@ -213,7 +213,7 @@ ul{
         font-size:16px;
     }
     header{
-        font-size: 50px;
+        font-size: 60px;
         font-weight: bolder;
         text-shadow:0 0 3px black;
     }
@@ -263,9 +263,9 @@ ul{
         font-size:16px;
     }
     header{
-        font-size: 24px;
+        font-size: 50px;
         font-weight: bolder;
-        text-shadow:0 0 3px black;
+        text-shadow:0 0 4px black;
     }
     .accent{
         font-size: 16px;
