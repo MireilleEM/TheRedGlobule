@@ -2,6 +2,7 @@
 
 *{
     box-sizing: border-box;
+    /*essai de branche*/
 }
 header{
     /*background-color: #f6FE78;*/
@@ -96,7 +97,7 @@ ul{
     grid-column: 2 / 4;
 }
 #dessin3{
-    background-image: url("../images/ninonjpg.JPG");
+    background-image: url("../images/image-asset.jpeg");
 }
 #dessin4{
     background-image: url("../images/application-gc14c0fb4e_1920.jpg");
