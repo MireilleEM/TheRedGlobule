@@ -190,6 +190,11 @@ ul{
     #bienvenue{
         padding: 16px;
     }
+    #slogan{
+        color:#8A97FE;
+        font-size: 20px;
+        margin-top: 30px;
+    }
     #dessin2{
         grid-column: auto;
     }
@@ -223,6 +228,11 @@ ul{
     }
     #bienvenue{
         padding: 8px;
+    }
+    #slogan{
+        color:#8A97FE;
+        font-size: 20px;
+        margin-top: 30px;
     }
     #dessin1{
         grid-row: auto;
@@ -270,6 +280,11 @@ ul{
     .accent{
         font-size: 16px;
         text-shadow:0 0 2px black;
+    }
+    #slogan{
+        color:#8A97FE;
+        font-size: 16px;
+        margin-top: 30px;
     }
     #dessin1{
         grid-row: auto;
