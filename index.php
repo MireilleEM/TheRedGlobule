@@ -2,7 +2,6 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <!--je refais un essai branche VS code-->
         <!--informations-->
         <title>TheRedGlobule</title>
         <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
@@ -23,18 +22,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet">  
     <!--exemple de commentaire-->
     <!-- pour que ça s'affiche bien sur les mobiles -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- cartes sociales -->
         <meta name="og:title" content="Le globule rouge">
         <meta name="og:description=" content="Site de vente des dessins de Ninouille">
     <!--il faut une image absolue-->
-        <meta name="og:image" content="https://images.unsplash.com/photo-1508161773455-3ada8ed2bbec?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-        <meta name="og:url" content="https://67aa1e609c4abc7ef3bfe78d--theredglobule.netlify.app/">"
+        <meta name="og:image" content="https://unsplash.com/fr/photos/collection-de-livres-assortis-RhGK4qOwxxw">
+        <meta name="og:url" content="https://67aa1e609c4abc7ef3bfe78d--theredglobule.netlify.app/">
         <meta name="og:site_name" content="Le globule rouge qui dessine">
-        <meta name="og:image:alt" content="Un site qui s'appelle le globule rouge et qui vend des dessins">
-        <meta charset="utf-8">
+        <meta name="og:image:alt" content="Un site qui s'appelle le globule rouge et qui vend des dessins">       
     </head>
-        <body>
+    <body>
         <!--en tête--> 
         <section id="bienvenue">
             <div class="conteneur">
@@ -46,9 +44,37 @@
         </section> 
             <!--<img src="images/oeil tres long.png" alt="affiche portes ouvertes"> on peut rajouter style="width:100%"-->
             <!--contenu-->
+        
         <section class="contenu conteneur"> 
+        <div id="mail">
+                <h1>Contactez-nous</h1>
+                <p>Pour toute demande remplissez le fomulaire ci-dessous</p>
+                <form method="post">
+                    <input type="text" name="nom" placeholder="Nom" required>
+                    <input type="email" name="email" placeholder="Email"  required>
+                    <input type="text" name="sujet" placeholder="Sujet"  required>
+                    <textarea name="message" placeholder="message" required></textarea>
+                    <input type="submit" value="Envoyer le message">
+                </form>
+<!--$retour= mail('mireille-emonot@orange.fr', 'MonSujet', 'MonMessage','From:contact@vetopia.fr');-->
+                <?php
+                //si le formulaire a été soumis
+                if(isset($_POST['message'])){
+                    $message = 'Ce message vous a été envoyé via le site Vetopia.fr
+                    Nom:'.$_POST['nom'].'
+                    Email:'.$_POST['email'].'
+                    Message:'.$_POST['message'];
+
+                    $retour= mail('suivi.vetopia@gmail.com', $_POST['sujet'], $message,'From:contact@vetopia.fr'.'\r\n'.'Reply-to:'.$_POST['email']);
+                    if ($retour) {
+                            echo '<p>Votre message a été envoyé.</p>';
+                    }
+                }
+                ?>
+            </div>
             <h1>Le Top 4 de <b id="mot">Ninon</b></h1>
             <h2 class="accent">Selectionnez une catégorie pour en savoir +</h2>
+            
             <section class="cartes">
                 <a href="" id="dessin1" class="carte_dessin"><p>Affiches</p></a>
                 <a href="" id="dessin2" class="carte_dessin"><p>Dessins</p></a>
@@ -62,7 +88,8 @@
             Bonjours l'univers
             <p><b>Bienvenue </b>sur <i>mon </i><u>site</u></p>-->
             <!--on peut aussi avoir strong à la place de bolt, veut dire que c'est un mot important-->
-        </section>
+        
+        
         <footer>
           <div class="conteneur" id="flex-footer">
             <nav>
@@ -75,7 +102,7 @@
              <img src="images/logo.png" alt="logo de dessin" style="width: 40px; border-radius: 40px;"></img>
              <span id="copyright">2025 © The Red Globule</span>
             </div>
-         </div>
+         </div>  
         </footer>
     </body>
 </html>
