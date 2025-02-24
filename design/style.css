@@ -13,6 +13,28 @@ header{
     text-shadow:0 0 8px black;
     /*padding-top: 300px;*/
 }
+#mail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+form input, form textarea{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 50px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+form input[type="submit"] {
+    background-color: #4CAF50;
+    width: auto;
+}
 img{
     width:100%;
 }
@@ -96,7 +118,7 @@ ul{
     grid-column: 2 / 4;
 }
 #dessin3{
-    background-image: url("../images/yeux.png");
+    background-image: url("../images/ninonjpg.JPG");
 }
 #dessin4{
     background-image: url("../images/application-gc14c0fb4e_1920.jpg");
@@ -176,7 +198,7 @@ ul{
         margin: 16px 0 16px;
     }
     header{
-        font-size: 90px;
+        font-size: 80px;
         font-weight: bolder;
         text-shadow:0 0 6px black;
     }
@@ -189,11 +211,6 @@ ul{
     }
     #bienvenue{
         padding: 16px;
-    }
-    #slogan{
-        color:#8A97FE;
-        font-size: 20px;
-        margin-top: 30px;
     }
     #dessin2{
         grid-column: auto;
@@ -218,7 +235,7 @@ ul{
         font-size:16px;
     }
     header{
-        font-size: 80px;
+        font-size: 50px;
         font-weight: bolder;
         text-shadow:0 0 3px black;
     }
@@ -228,11 +245,6 @@ ul{
     }
     #bienvenue{
         padding: 8px;
-    }
-    #slogan{
-        color:#8A97FE;
-        font-size: 20px;
-        margin-top: 30px;
     }
     #dessin1{
         grid-row: auto;
@@ -273,18 +285,13 @@ ul{
         font-size:16px;
     }
     header{
-        font-size: 60px;
+        font-size: 24px;
         font-weight: bolder;
-        text-shadow:0 0 4px black;
+        text-shadow:0 0 3px black;
     }
     .accent{
         font-size: 16px;
         text-shadow:0 0 2px black;
-    }
-    #slogan{
-        color:#8A97FE;
-        font-size: 16px;
-        margin-top: 30px;
     }
     #dessin1{
         grid-row: auto;
